@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 </head>
 <body>
+<div class="d-flex justify-content-center p-3 mb-2 bg-primary text-white">
 <h1><span>Best of the year by </span><span th:text="${name}"></span></h1>
+</div>
 
-<a th:href="@{/movies}">Best movies</a>
-<a th:href="@{/songs}">Best songs</a>
-
+<div class="d-flex justify-content-evenly fs-1">
+<a class="badge bg-primary " th:href="@{/movies}">Best movies</a>
+<a class="badge bg-primary  " th:href="@{/songs}">Best songs</a>
+</div>
 
 </body>
 </html>
